@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page de garde</title>
+    <link rel="stylesheet" href="../css/page_de_garde.css">
+</head>
+<body>
+    
+    <img id="image" src="../images/logo_fourniture2.svg" alt="Chargement">
+
+    <script>
+        // Fonction pour masquer l'élément et naviguer vers une autre page
+            function hideElementAndNavigate() {
+                var image = document.getElementById('image');
+                image.classList.add('hidden');
+                
+                // Naviguer vers une autre page après 5 secondes (même durée que l'animation)
+                setTimeout(function() {
+                    window.location.href = 'page_acceuil.html';
+                }, 500);
+            }
+
+            // Attacher un gestionnaire d'événements à l'événement d'animation
+            var image = document.getElementById('image');
+            image.addEventListener('animationiteration', hideElementAndNavigate);
+        
+        
+        
+        
+    </script>
+</body>
+</html>
