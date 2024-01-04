@@ -198,4 +198,26 @@
                 <a href="detail_stylo.html"><button class="bt2">Voir plus</button></a>
             </div>
         </div>
+
+             <script>
+        window.onload = function() {
+    const searchBox = document.getElementById('site-search');
+    searchBox.addEventListener('keyup', function(e) {
+        const searchStr = e.target.value.toLowerCase();
+        const productCards = document.querySelectorAll('.product-card');
+        productCards.forEach(card => {
+            const productTitle = card.querySelector('.product-title').textContent.toLowerCase();
+            if (productTitle.includes(searchStr)) {
+                card.style.display = '';
+            } else {
+                card.style.display = 'none';
+            }
+        });
+    });
+};
+    </script>
+      
+        </html>
+        </body>
+  
   
