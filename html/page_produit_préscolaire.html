@@ -5,9 +5,218 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Page produit</title>
     <link rel="stylesheet" href="../css/page_produit_préscolaire.css">
+    <script src="https://cdn.cinetpay.com/seamless/main.js"></script>
+    <script>
+        
+    
+
+        function checkout1() {
+            CinetPay.setConfig({
+                apikey: '210917157659d445c73b317.96523189',//   YOUR APIKEY
+                site_id: '5867072',//YOUR_SITE_ID
+                notify_url: 'http://127.0.0.1:5500/retour.html',
+                mode: 'TEST'
+            });
+            CinetPay.getCheckout({
+                transaction_id: Math.floor(Math.random() * 100000000).toString(),
+                amount: 2500,
+                currency: 'XOF',
+                channels: 'MOBILE_MONEY',
+                description: 'Test de paiement',   
+                 //Fournir ces variables pour le paiements par carte bancaire
+                customer_name:"Joe",//Le nom du client
+                customer_surname:"Down",//Le prenom du client
+                customer_email: "down@test.com",//l'email du client
+                customer_phone_number: "088767611",//l'email du client
+                customer_address : "BP 0024",//addresse du client
+                customer_city: "Antananarivo",// La ville du client
+                customer_country : "CM",// le code ISO du pays
+                customer_state : "CM",// le code ISO l'état
+                customer_zip_code : "06510", // code postal
+
+            });
+            CinetPay.waitResponse(function(data) {
+                if (data.status == "REFUSED") {
+                    if (alert("Votre paiement a échoué")) {
+                        window.location.reload();
+                    }
+                } else if (data.status == "ACCEPTED") {
+                    if (alert("Votre paiement a été effectué avec succès")) {
+                        window.location.reload();
+                    }
+                }
+            });
+            CinetPay.onError(function(data) {
+                console.log(data);
+            });
+        }
+
+        function checkout2() {
+            CinetPay.setConfig({
+                apikey: '210917157659d445c73b317.96523189',//   YOUR APIKEY
+                site_id: '5867072',//YOUR_SITE_ID
+                notify_url: 'http://127.0.0.1:5500/retour.html',
+                mode: 'TEST'
+            });
+            CinetPay.getCheckout({
+                transaction_id: Math.floor(Math.random() * 100000000).toString(),
+                amount: 500,
+                currency: 'XOF',
+                channels: 'MOBILE_MONEY',
+                description: 'Test de paiement',   
+                 //Fournir ces variables pour le paiements par carte bancaire
+                customer_name:"Joe",//Le nom du client
+                customer_surname:"Down",//Le prenom du client
+                customer_email: "down@test.com",//l'email du client
+                customer_phone_number: "088767611",//l'email du client
+                customer_address : "BP 0024",//addresse du client
+                customer_city: "Antananarivo",// La ville du client
+                customer_country : "CM",// le code ISO du pays
+                customer_state : "CM",// le code ISO l'état
+                customer_zip_code : "06510", // code postal
+
+            });
+            CinetPay.waitResponse(function(data) {
+                if (data.status == "REFUSED") {
+                    if (alert("Votre paiement a échoué")) {
+                        window.location.reload();
+                    }
+                } else if (data.status == "ACCEPTED") {
+                    if (alert("Votre paiement a été effectué avec succès")) {
+                        window.location.reload();
+                    }
+                }
+            });
+            CinetPay.onError(function(data) {
+                console.log(data);
+            });
+        }
+        function checkout3() {
+            CinetPay.setConfig({
+                apikey: '210917157659d445c73b317.96523189',//   YOUR APIKEY
+                site_id: '5867072',//YOUR_SITE_ID
+                notify_url: 'http://127.0.0.1:5500/retour.html',
+                mode: 'TEST'
+            });
+            CinetPay.getCheckout({
+                transaction_id: Math.floor(Math.random() * 100000000).toString(),
+                amount: 1500,
+                currency: 'XOF',
+                channels: 'MOBILE_MONEY',
+                description: 'Test de paiement',   
+                 //Fournir ces variables pour le paiements par carte bancaire
+                customer_name:"Joe",//Le nom du client
+                customer_surname:"Down",//Le prenom du client
+                customer_email: "down@test.com",//l'email du client
+                customer_phone_number: "088767611",//l'email du client
+                customer_address : "BP 0024",//addresse du client
+                customer_city: "Antananarivo",// La ville du client
+                customer_country : "CM",// le code ISO du pays
+                customer_state : "CM",// le code ISO l'état
+                customer_zip_code : "06510", // code postal
+
+            });
+            CinetPay.waitResponse(function(data) {
+                if (data.status == "REFUSED") {
+                    if (alert("Votre paiement a échoué")) {
+                        window.location.reload();
+                    }
+                } else if (data.status == "ACCEPTED") {
+                    if (alert("Votre paiement a été effectué avec succès")) {
+                        window.location.reload();
+                    }
+                }
+            });
+            CinetPay.onError(function(data) {
+                console.log(data);
+            });
+        }
+        
+        function checkout4() {
+            CinetPay.setConfig({
+                apikey: '210917157659d445c73b317.96523189',//   YOUR APIKEY
+                site_id: '5867072',//YOUR_SITE_ID
+                notify_url: 'http://127.0.0.1:5500/retour.html',
+                mode: 'TEST'
+            });
+            CinetPay.getCheckout({
+                transaction_id: Math.floor(Math.random() * 100000000).toString(),
+                amount: 2750,
+                currency: 'XOF',
+                channels: 'MOBILE_MONEY',
+                description: 'Test de paiement',   
+                 //Fournir ces variables pour le paiements par carte bancaire
+                customer_name:"Joe",//Le nom du client
+                customer_surname:"Down",//Le prenom du client
+                customer_email: "down@test.com",//l'email du client
+                customer_phone_number: "088767611",//l'email du client
+                customer_address : "BP 0024",//addresse du client
+                customer_city: "Antananarivo",// La ville du client
+                customer_country : "CM",// le code ISO du pays
+                customer_state : "CM",// le code ISO l'état
+                customer_zip_code : "06510", // code postal
+
+            });
+            CinetPay.waitResponse(function(data) {
+                if (data.status == "REFUSED") {
+                    if (alert("Votre paiement a échoué")) {
+                        window.location.reload();
+                    }
+                } else if (data.status == "ACCEPTED") {
+                    if (alert("Votre paiement a été effectué avec succès")) {
+                        window.location.reload();
+                    }
+                }
+            });
+            CinetPay.onError(function(data) {
+                console.log(data);
+            });
+        }
+        function checkout5() {
+            CinetPay.setConfig({
+                apikey: '210917157659d445c73b317.96523189',//   YOUR APIKEY
+                site_id: '5867072',//YOUR_SITE_ID
+                notify_url: 'http://127.0.0.1:5500/retour.html',
+                mode: 'TEST'
+            });
+            CinetPay.getCheckout({
+                transaction_id: Math.floor(Math.random() * 100000000).toString(),
+                amount: 1300,
+                currency: 'XOF',
+                channels: 'MOBILE_MONEY',
+                description: 'Test de paiement',   
+                 //Fournir ces variables pour le paiements par carte bancaire
+                customer_name:"Joe",//Le nom du client
+                customer_surname:"Down",//Le prenom du client
+                customer_email: "down@test.com",//l'email du client
+                customer_phone_number: "088767611",//l'email du client
+                customer_address : "BP 0024",//addresse du client
+                customer_city: "Antananarivo",// La ville du client
+                customer_country : "CM",// le code ISO du pays
+                customer_state : "CM",// le code ISO l'état
+                customer_zip_code : "06510", // code postal
+
+            });
+            CinetPay.waitResponse(function(data) {
+                if (data.status == "REFUSED") {
+                    if (alert("Votre paiement a échoué")) {
+                        window.location.reload();
+                    }
+                } else if (data.status == "ACCEPTED") {
+                    if (alert("Votre paiement a été effectué avec succès")) {
+                        window.location.reload();
+                    }
+                }
+            });
+            CinetPay.onError(function(data) {
+                console.log(data);
+            });
+        }
+    </script>
 
 </head>
 <body>
+    </head>
     <nav>
         <img src="../images/logo.svg" alt="logo">
         <ul class="elements_nav">
@@ -25,7 +234,8 @@
         </ul>
         <input type="search" id="site-search" name="q" placeholder="Rechercher un produit...">
     </nav>
-
+        
+    
         <div class="container">
         <div class="product-card">
             <div class="triangle"></div>
@@ -34,7 +244,7 @@
             <p class="product-price">2.500 FCFA</p>
             <p class="product-rating">★★★★★</p>
             <div class="product-buttons">
-                <a href=""><button class="bt1">Ajouter</button></a>
+                <button onclick="checkout1()" class="bt1">Payer</button>
                 <a href="detail_cahier_coloriage.html"><button class="bt2">Voir plus</button></a>
             </div>
         </div>
@@ -46,7 +256,7 @@
             <p class="product-price">500 FCFA</p>
             <p class="product-rating">★★★★★</p>
             <div class="product-buttons">
-                <a href=""><button class="bt1">Ajouter</button></a>
+                <button onclick="checkout2()" class="bt1">Ajouter</button>      
                 <a href="detail_gomme.html"><button class="bt2">Voir plus</button></a>
             </div>
         </div>
@@ -58,7 +268,7 @@
             <p class="product-price">1.500 FCFA</p>
             <p class="product-rating">★★★★★</p>
             <div class="product-buttons">
-                <a href=""><button class="bt1">Ajouter</button></a>
+                <button onclick="checkout3()" class="bt1">Ajouter</button>
                 <a href="detail_cahier_dessin.html"><button class="bt2">Voir plus</button></a>
             </div>
         </div>
@@ -69,7 +279,7 @@
             <p class="product-price">2.750 FCFA</p>
             <p class="product-rating">★★★★★</p>
             <div class="product-buttons">
-                <a href=""><button class="bt1">Ajouter</button></a>
+                <button onclick="checkout4()" class="bt1">Ajouter</button>
                 <a href="detail_gourde.html"><button class="bt2">Voir plus</button></a>
             </div>
         </div>
@@ -81,7 +291,7 @@
             <p class="product-price">1.300 FCFA</p>
             <p class="product-rating">★★★★★</p>
             <div class="product-buttons">
-                <a href=""><button class="bt1">Ajouter</button></a>
+                <button onclick="checkout5()" class="bt1">Ajouter</button>
                 <a href="detail_boite_gouter.html"><button class="bt2">Voir plus</button></a>
             </div>
         </div>
