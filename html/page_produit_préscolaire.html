@@ -19,13 +19,13 @@
             });
             CinetPay.getCheckout({
                 transaction_id: Math.floor(Math.random() * 100000000).toString(),
-                amount: 2500,
+                amount: 100,
                 currency: 'XOF',
                 channels: 'MOBILE_MONEY',
                 description: 'Test de paiement',   
                  //Fournir ces variables pour le paiements par carte bancaire
-                customer_name:"Joe",//Le nom du client
-                customer_surname:"Down",//Le prenom du client
+                customer_name:"HUGUES",//Le nom du client
+                customer_surname:"N'DRIN",//Le prenom du client
                 customer_email: "down@test.com",//l'email du client
                 customer_phone_number: "088767611",//l'email du client
                 customer_address : "BP 0024",//addresse du client
@@ -241,7 +241,7 @@
             <div class="triangle"></div>
             <img class="product-image" src="../images/coloriages-animaux-vignette.png" alt="Product Image">
             <h2 class="product-title">Cahiers de coloriage</h2>
-            <p class="product-price">2.500 FCFA</p>
+            <p class="product-price">100 FCFA</p>
             <p class="product-rating">★★★★★</p>
             <div class="product-buttons">
                 <button onclick="checkout1()" class="bt1">Payer</button>
