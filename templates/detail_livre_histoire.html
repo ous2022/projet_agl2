@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../static/css/detail_crayon_couleurs.css">
+</head>
+<body>
+    {% extends "navbar.html" %}
+    {% block main %} 
+    <div class="grandeDiv">
+        <div class="triangle"></div>
+        <img src="../static/images/livrehistoire.png" alt="" width="280px" height="380px">
+        <h3 class="nom">Livre d'histoire</h3>
+        <h4>5000 FCFA</h4>
+    </div>
+    <a href=""><button>Ajouter au panier</button></a>
+    <div class="descriptions">
+        <h3 class="qte">Description</h3>
+        <p> <span class="ligne1">"Le lièvre et la tortue" - Livre d'Histoire Captivant</span>
+            <span class="ligne2"><br>Plongez dans le passé avec notre livre d'histoire captivant, "Le lièvre et la tortue".
+                <br>Explorez les moments marquants qui ont façonné notre monde et découvrez les récits fascinants qui ont forgé notre héritage.</span> <br>
+           
+        </p>
+
+    </div>
+</body>
+</html>
+{% endblock %} 

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../static/css/detail_crayon_couleurs.css">
+</head>
+<body>
+    {% extends "navbar.html" %}
+    {% block main %} 
+    <div class="grandeDiv">
+        <div class="triangle"></div>
+        <img src="../static/images/colle.jpg" alt="" width="280px" height="380px">
+        <h3 class="nom">Pot de colle</h3>
+        <h4>500 FCFA</h4>
+    </div>
+    <a href=""><button>Ajouter au panier</button></a>
+    <div class="descriptions">
+        <h3 class="qte">Description</h3>
+        <p> <span class="ligne1">Pot de Colle Polyvalente pour Projets Créatifs et Pratiques</span>
+            <span class="ligne2"><br>Notre pot de colle polyvalente est l'outil indispensable pour tous vos projets, qu'ils soient créatifs ou pratiques. 
+            <br>Avec une adhérence fiable et une formule de qualité, cette colle deviendra votre alliée pour toutes sortes d'activités.</span> <br>
+           
+        </p>
+
+    </div>
+</body>
+</html>
+{% endblock %} 

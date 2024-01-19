@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../static/css/detail_crayon_couleurs.css">
+</head>
+<body>
+    {% extends "navbar.html" %}
+    {% block main %} 
+    <div class="grandeDiv">
+        <div class="triangle"></div>
+        <img src="../static/images/tablier.jpg" alt="" width="280px" height="380px">
+        <h3 class="nom">Tablier</h3>
+        <h4>4.350FCFA</h4>
+    </div>
+    <a href=""><button>Ajouter au panier</button></a>
+    <div class="descriptions">
+        <h3 class="qte">Description</h3>
+        <p> <span class="ligne1">Tablier Scolaire Pratique pour les Petits Écoliers</span>
+            <span class="ligne2"><br>Notre tablier scolaire est conçu pour accompagner les jeunes esprits créatifs dans leurs aventures artistiques à l'école.
+            <br>Avec une touche de couleur et une fonctionnalité optimale, ce tablier est l'accessoire parfait pour les activités artistiques et manuelles.</span> <br>
+           
+        </p>
+
+    </div>
+</body>
+</html>
+{% endblock %} 

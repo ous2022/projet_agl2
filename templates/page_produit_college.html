@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page produit</title>
+    <link rel="stylesheet" href="../static/css/page_produit_college.css">
+
+</head>
+<body>
+    <nav>
+        <img src="../images/logo.svg" alt="logo">
+        <ul class="elements_nav">
+            <a href="page_acceuil.html"><li>Accueil</li></a>
+            <a href="categorie.html"><li>Categories</li></a>
+            <a href=""><li>A propos</li></a>
+        </ul>
+        <ul class="menu_deroulant">
+            <li><a href="">Connexion</a>
+                <ul class="sous_menu">
+                    <a href="page_inscription.html"><li>S'inscrire</li></a>
+                    <a href="page_connexion.html"><li>Se_connecter</li></a>
+                </ul>
+            </li>
+        </ul>
+        <input type="search" id="site-search" name="q" placeholder="Rechercher un produit...">
+    </nav>
+    <div class="container">
+        <div class="product-card">
+            <div class="triangle"></div>
+            <img class="product-image" src="../static/images/coloriages-animaux-vignette.png" alt="Product Image">
+            <h2 class="product-title">Cahiers de coloriage</h2>
+            <p class="product-price">2.500 FCFA</p>
+            <p class="product-rating">★★★★★</p>
+            <div class="product-buttons">
+                <button onclick="checkout1()" class="bt1">Payer</button>
+                <a href='{{url_for("detail_ccC")}}'><button class="bt2">Voir plus</button></a>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <div class="triangle"></div>
+            <img class="product-image" src="../static/images/GOMME.png" alt="Product Image">
+            <h2 class="product-title">Gomme </h2>
+            <p class="product-price">500 FCFA</p>
+            <p class="product-rating">★★★★★</p>
+            <div class="product-buttons">
+                <button onclick="checkout2()" class="bt1">Ajouter</button>      
+                <a href='{{url_for("gommeC")}}'><button class="bt2">Voir plus</button></a>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <div class="triangle"></div>
+            <img class="product-image" src="../static/images/COLORIAGE.jpg" alt="Product Image">
+            <h2 class="product-title">Cahier de coloriage et de découpage</h2>
+            <p class="product-price">1.500 FCFA</p>
+            <p class="product-rating">★★★★★</p>
+            <div class="product-buttons">
+                <button onclick="checkout3()" class="bt1">Ajouter</button>
+                <a href='{{url_for("dessinC")}}'><button class="bt2">Voir plus</button></a>
+            </div>
+        </div>
+        <div class="product-card">
+            <div class="triangle"></div>
+            <img class="product-image" src="../static/images/Gourde.png" alt="Product Image">
+            <h2 class="product-title">Gourde</h2>
+            <p class="product-price">2.750 FCFA</p>
+            <p class="product-rating">★★★★★</p>
+            <div class="product-buttons">
+                <button onclick="checkout4()" class="bt1">Ajouter</button>
+                <a href='{{url_for("gourdeC")}}'><button class="bt2">Voir plus</button></a>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <div class="triangle"></div>
+            <img class="product-image" src="../static/images/Boite à mqnger.png" alt="Product Image">
+            <h2 class="product-title">Boite à gouter</h2>
+            <p class="product-price">1.300 FCFA</p>
+            <p class="product-rating">★★★★★</p>
+            <div class="product-buttons">
+                <button onclick="checkout5()" class="bt1">Ajouter</button>
+                <a href='{{url_for("boite_gouterC")}}'><button class="bt2">Voir plus</button></a>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <div class="triangle"></div>
+            <img class="product-image" src="../static/IMAGES/g106.jpg" alt="Product Image">
+            <h2 class="product-title">Livre d'histoire </h2>
+            <p class="product-price">5.000 FCFA</p>
+            <p class="product-rating">★★★★★</p>
+            <div class="product-buttons">
+                <a href=""><button class="bt1">Ajouter</button></a>
+                <a href='{{url_for("livre_histoireC")}}'><button class="bt2">Voir plus</button></a>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <div class="triangle"></div>
+            <img class="product-image" src="../static/images/crayoncoulers.png" alt="Product Image">
+            <h2 class="product-title"> Crayon de couleurs </h2>
+            <p class="product-price">1.000 FCFA</p>
+            <p class="product-rating">★★★★★</p>
+            <div class="product-buttons">
+                <a href=""><button class="bt1">Ajouter</button></a>
+                <a href='{{url_for("crayon_couleursC")}}'><button class="bt2">Voir plus</button></a>
+            </div>
+        </div>
+        
+        <div class="product-card">
+            <div class="triangle"></div>
+            <img class="product-image" src="../static/images/ciseau.jpg" alt="Product Image">
+            <h2 class="product-title"> Ciseaux </h2>
+            <p class="product-price">1.000 FCFA</p>
+            <p class="product-rating">★★★★★</p>
+            <div class="product-buttons">
+                <a href=""><button class="bt1">Ajouter</button></a>
+                <a href='{{url_for("ciseauC")}}'><button class="bt2">Voir plus</button></a>
+            </div>
+        </div>
+        <div class="product-card">
+            <div class="triangle"></div>
+            <img class="product-image" src="../static/images/colle.jpg" alt="Product Image">
+            <h2 class="product-title"> Pot de colle </h2>
+            <p class="product-price">500 FCFA</p>
+            <p class="product-rating">★★★★★</p>
+            <div class="product-buttons">
+                <a href=""><button class="bt1">Ajouter</button></a>
+                <a href='{{url_for("colleC")}}'><button class="bt2">Voir plus</button></a>
+            </div>
+        </div>
+        <div class="product-card">
+            <div class="triangle"></div>
+            <img class="product-image" src="../static/images/crayons_papier.jpg" alt="Product Image">
+            <h2 class="product-title"> Crayon à papier</h2>
+            <p class="product-price">500 FCFA</p>
+            <p class="product-rating">★★★★★</p>
+            <div class="product-buttons">
+                <a href=""><button class="bt1">Ajouter</button></a>
+                <a href='{{url_for("crayonC")}}'><button class="bt2">Voir plus</button></a>
+            </div>
+        </div>
+        <div class="product-card">
+            <div class="triangle"></div>
+            <img class="product-image" src="../static/images/feutre.jpg" alt="Product Image">
+            <h2 class="product-title"> Feutre lavable </h2>
+            <p class="product-price">3.500 FCFA</p>
+            <p class="product-rating">★★★★★</p>
+            <div class="product-buttons">
+                <a href=""><button class="bt1">Ajouter</button></a>
+                <a href='{{url_for("feutreC")}}'><button class="bt2">Voir plus</button></a>
+            </div>
+        </div>
+        <div class="product-card">
+            <div class="triangle"></div>
+            <img class="product-image" src="../static/images/papier_carton.jpeg" alt="Product Image">
+            <h2 class="product-title"> Papier cartonné </h2>
+            <p class="product-price">1.800 FCFA</p>
+            <p class="product-rating">★★★★★</p>
+            <div class="product-buttons">
+                <a href=""><button class="bt1">Ajouter</button></a>
+                <a href='{{url_for("papier_cartonC")}}'><button class="bt2">Voir plus</button></a>
+            </div>
+        </div>
+        <div class="product-card">
+            <div class="triangle"></div>
+            <img class="product-image" src="../static/images/tablier.jpg" alt="Product Image">
+            <h2 class="product-title"> Tablier </h2>
+            <p class="product-price">4.350 FCFA</p>
+            <p class="product-rating">★★★★★</p>
+            <div class="product-buttons">
+                <a href=""><button class="bt1">Ajouter</button></a>
+                <a href='{{url_for("tablierC")}}'><button class="bt2">Voir plus</button></a>
+            </div>
+        </div>
+
+             <script>
+        window.onload = function() {
+    const searchBox = document.getElementById('site-search');
+    searchBox.addEventListener('keyup', function(e) {
+        const searchStr = e.target.value.toLowerCase();
+        const productCards = document.querySelectorAll('.product-card');
+        productCards.forEach(card => {
+            const productTitle = card.querySelector('.product-title').textContent.toLowerCase();
+            if (productTitle.includes(searchStr)) {
+                card.style.display = '';
+            } else {
+                card.style.display = 'none';
+            }
+        });
+    });
+};
+    </script>
+      
+        </html>
+        </body>
+  

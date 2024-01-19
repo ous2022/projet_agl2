@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panier</title>
+</head>
+<body>
+    <h1>Panier</h1>
+    <ul>
+        {% for item in panier %}
+            <li>{{ item.produit }} - {{ item.quantite }} x {{ item.prix_unitaire }} €</li>
+        {% endfor %}
+    </ul>
+    <p>Montant total : {{ montant_total }} €</p>
+    <a href="{{ url_for('panier') }}">Passer au paiement</a>
+</body>
+</html>

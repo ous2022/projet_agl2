@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../static/css/detail_crayon_couleurs.css">
+</head>
+<body>
+    {% extends "navbar.html" %}
+    {% block main %} 
+    <div class="grandeDiv">
+        <div class="triangle"></div>
+        <img src="../static/images/crayons_papier.jpg" alt="" width="280px" height="380px">
+        <h3 class="nom">Crayon à papier</h3>
+        <h4>500 FCFA</h4>
+    </div>
+    <a href=""><button>Ajouter au panier</button></a>
+    <div class="descriptions">
+        <h3 class="qte">Description</h3>
+        <p> <span class="ligne1">Crayon à Papier Premium pour Dessin et Écriture</span>
+            <span class="ligne2"><br>Découvrez l'élégance et la performance avec notre crayon à papier premium, un compagnon parfait pour tous les amateurs d'art et de rédaction. 
+                <br>Que vous esquissiez des croquis détaillés ou preniez des notes importantes, ce crayon allie style et fonctionnalité.</span> <br>
+           
+        </p>
+
+    </div>
+</body>
+</html>
+{% endblock %} 

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>page inscription</title>
+    <link rel="stylesheet" href="../static/css/page_inscription.css">
+</head>
+<body>
+    <nav>
+        <img src="../static/images/logo.svg" alt="logo">
+        <ul class="elements_nav">
+            <a href='{{ url_for("accueil") }}'><li>Accueil</li></a>
+            <a href='{{ url_for("categories") }}'><li>Categories</li></a>
+            <a href=""><li>A propos</li></a>
+        </ul>
+        <ul class="menu_deroulant">
+            <li><a href="">Connexion</a>
+                <ul class="sous_menu">
+                    <a href='{{ url_for("inscription") }}'><li>S'inscrire</li></a>
+                    <a href='{{ url_for("connexion") }}'><li>Se_connecter</li></a>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+    
+    <form method="post" action="{{url_for('inscription')}}">
+        <h2>Inscription </h2>
+        <input type="text" id="nom" name="nom" required placeholder="Nom">
+        <input type="text" id="prenom" name="prenom" required placeholder="Prénom">
+        <input type="text" id="name" name="name" required placeholder="Nom utilisateur ">
+        <input type="text" id="email" name="email" required placeholder="Email">
+        <input  type="password" id="pwd" name="pwd" placeholder="Mot de passe">
+        <img src="../static/images/oeil-removebg-preview.png" id="eyeclose" onclick="montre()">
+        <img src="../static/images/oeil visible.png" id="eye" alt="vu" onclick="caché()">
+        <script>
+          function montre() {
+              var x = document.getElementById("pwd");
+              if (x.type === "password") {
+                  x.type = "text";
+                  document.getElementById('eye').style.display='block'
+                  document.getElementById('eyeclose').style.display='none'
+
+              }
+          }
+          function caché() {
+              var x = document.getElementById("pwd");
+              if (x.type === "text") {
+                  x.type = "password";
+                  document.getElementById('eye').style.display='none'
+                  document.getElementById('eyeclose').style.display='block'
+
+              }
+          }
+
+          </script>
+      <input type="submit" value="S'inscrire">
+    </form>
+  </div>
+</body>
+
+</html>

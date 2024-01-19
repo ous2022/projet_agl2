@@ -1,0 +1,18 @@
+{% block main %} 
+<nav>
+    <img src="../static/images/logo.svg" alt="logo">
+    <ul class="elements_nav">
+        <a href='{{ url_for("accueil") }}'><li>Accueil</li></a>
+        <a href='{{ url_for("categories") }}'><li>Categories</li></a>
+        <a href=""><li>A propos</li></a>
+    </ul>
+    <ul class="menu_deroulant">
+        <li><a href="">Connexion</a>
+            <ul class="sous_menu">
+                <a href='{{ url_for("inscription") }}'><li>S'inscrire</li></a>
+                <a href='{{ url_for("connexion") }}'><li>Se_connecter</li></a>
+            </ul>
+        </li>
+    </ul>
+</nav>
+{% endblock %}

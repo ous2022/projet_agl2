@@ -1,0 +1,148 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #D6D6D6;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 80px;
+    background-color: #0A0A0A;
+  }
+  
+  nav img {
+    margin-left: 0px;
+    width: 150px;
+    height: 150px;
+  }
+  
+  .elements_nav {
+    list-style-type: none;
+    margin-right: 75px;
+  }
+  
+  .elements_nav li {
+    display: inline-block;
+    text-transform: uppercase;
+    margin-left: 30px;
+    justify-content: space-around;
+    color: #FFFFFF;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+  }
+  
+  .elements_nav li:hover {
+    color: blue;
+  }
+  
+  .menu_deroulant {
+    list-style: none;
+    color: #FFFFFF;
+    margin-right: 150px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+  .menu_deroulant li {
+    position: relative; 
+  }
+  
+  .menu_deroulant li a {
+    text-decoration: none;
+    color: #FFFFFF;
+    display: block;
+  }
+  
+  .menu_deroulant .sous_menu {
+    display: none;
+    position: absolute; 
+    top: 100%; 
+    left: 0;
+    background-color: #0A0A0A;
+    padding: 10px;
+  }
+  
+  .menu_deroulant li:hover .sous_menu {
+    display: block;
+    text-transform: capitalize;
+    list-style-type: none;
+
+   
+    color: #FFFFFF;
+    background-color:#0377E3;
+    
+  }
+  .menu_deroulant li:hover .sous_menu li:hover {
+    color: #000000;
+    
+  }
+
+
+.cases {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 500px 500px;
+    grid-template-rows: 300px 300px;
+    gap: 10px;
+    margin-left: 15%;
+    
+  
+    
+}
+.cases > div {
+    background-color: blue;
+    padding: 80px;
+    border-radius: 20px;
+    border: solid none;
+    
+}
+.case1{
+    background-image: url(../images/prescolaire.jpg);
+    background-size: 500px 300px;
+    background-repeat: no-repeat;
+    opacity: 0.8;
+}
+.case1:hover,.case2:hover,.case3:hover,.case4:hover{
+    transform: scale(1.1)
+}
+.case2{
+    background-image: url(../images/primaire.jpg);
+    background-size: 500px 300px;
+    background-repeat: no-repeat;
+    opacity: 0.8;
+}
+.case3{
+    background-image: url(../images/college2.jpg);
+    background-size: 500px 300px;
+    background-repeat: no-repeat;
+    opacity: 0.8;
+}
+.case4{
+    background-image: url(../images/lycee.jpg);
+    background-size: 500px 300px;
+    background-repeat: no-repeat;
+    opacity: 0.8;
+}
+.case1 h3,.case2 h3,.case3 h3,.case4 h3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 35px;
+    color: #fff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.case1 img,.case2 img,.case3 img,.case4 img{
+    margin-left: 35%;
+    margin-right: 35%;
+    
+}
+.case1 a,.case2 a,.case3 a,.case4 a{
+    text-decoration: none;
+}

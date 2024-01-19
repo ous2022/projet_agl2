@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../static/css/detail_crayon_couleurs.css">
+</head>
+<body>
+    {% extends "navbar.html" %}
+    {% block main %} 
+    <div class="grandeDiv">
+        <div class="triangle"></div>
+        <img src="../static/images/feutre.jpg" alt="" width="280px" height="380px">
+        <h3 class="nom">Feutre lavable</h3>
+        <h4>3.500FCFA</h4>
+    </div>
+    <a href=""><button>Ajouter au panier</button></a>
+    <div class="descriptions">
+        <h3 class="qte">Description</h3>
+        <p> <span class="ligne1">Feutre Lavable Amusant et Sans Souci pour les Petits Artistes</span>
+            <span class="ligne2"><br>Introduisez de la créativité sans limites avec notre feutre lavable, spécialement conçu pour les petits artistes en herbe. 
+            <br>Offrant une palette de couleurs vibrantes et une facilité d'utilisation, ce feutre est le choix idéal pour des heures de dessin sans souci.</span> <br>
+           
+        </p>
+
+    </div>
+</body>
+</html>
+{% endblock %} 

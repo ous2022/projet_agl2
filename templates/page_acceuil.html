@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page d'acceuil</title>
+    <link rel="stylesheet" href="../static/css/page_acceuil.css">
+</head>
+<body>
+    <nav>
+        <img src="../static/images/logo.svg" alt="logo">
+        <ul class="elements_nav">
+            <a href='{{ url_for("accueil") }}'><li>Accueil</li></a>
+            <a href='{{ url_for("categories") }}'><li>Categories</li></a>
+            <a href=""><li>A propos</li></a>
+        </ul>
+        <ul class="menu_deroulant">
+            <li><a href="">Connexion</a>
+                <ul class="sous_menu">
+                    <a href='{{ url_for("inscription") }}'><li>S'inscrire</li></a>
+                    <a href='{{ url_for("connexion") }}'><li>Se_connecter</li></a>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+    <p class="presentation">
+        <span class="span1">Salut,</span><span class="span2"> Bienvenue !</span><br><br><br>
+        <span class="span3">Notre site e-commerce, le guichet unique pour toutes vos<br> 
+        fournitures scolaires. Nous proposons une large gamme de<br>
+        fournitures pour tous les niveaux, du préscolaire au lycée.<br>
+        Notre site est facile à naviguer, vous permettant de trouver<br>
+        rapidement ce dont vous avez besoin. Nous offrons des<br>
+        produits de qualité à des prix abordables. Bon shopping !</span>
+        
+    </p>
+    <br><br><br><br><br>
+    
+    <div class="bouttons">
+        <a href='{{ url_for("connexion") }}'>
+            <input class="b1" type="submit" value="Se connecter">
+        </a>
+        
+        <a class="espace_between" href='{{ url_for("inscription") }}'>
+            <input class="b2" type="submit" value="S'inscrire">
+        </a>
+    </div>
+
+    <div class="chariot">
+        <img class="dim" src="../static/images/chariot-depicerie.png" alt="chariot-depicerie">
+    </div>
+    
+</body>
+</html>
